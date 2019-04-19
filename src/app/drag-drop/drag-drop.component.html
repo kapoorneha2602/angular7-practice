@@ -1,3 +1,26 @@
-<p>
-  drag-drop works!
-</p>
+<div class="row">
+  <div class="col-lg-6">
+    <div class="list-group" cdkDropList #todoList="cdkDropList" [cdkDropListData]="todos"
+      [cdkDropListConnectedTo]="doneList" (cdkDropListDropped)="onDrop($event)">
+      <h2 cdkDrag>Tech to learn</h2>
+      <mat-card class="list-group-item" *ngFor="let todo of todos;let i = index" cdkDrag>
+        <mat-card-header class="p-2 mb-1 bg-secondary text-white">
+          <mat-card-title>{{ i + 1 }} - {{todo.name}}</mat-card-title>
+          <mat-card-subtitle>{{todo.category}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="list-group" cdkDropList #doneList="cdkDropList" [cdkDropListData]="completed"
+      [cdkDropListConnectedTo]="todoList" (cdkDropListDropped)="onDrop($event)">
+      <h2 cdkDrag>Tech learned</h2>
+      <mat-card class="list-group-item" *ngFor="let complete of completed;let i = index" cdkDrag>
+        <mat-card-header class="p-2 mb-1 bg-info  text-white">
+          <mat-card-title>{{ i + 1 }} - {{complete.name}}</mat-card-title>
+          <mat-card-subtitle>{{complete.category}}</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </div>
+  </div>
+</div>

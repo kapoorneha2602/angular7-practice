@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.component';
-
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule, MatMenuModule, MatInputModule, MatTableModule, MatButtonModule, MatCardModule, MatTableDataSource, MatPaginatorModule, MatSortModule } from '@angular/material'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,10 @@ import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule, MatMenuModule, MatInputModule, MatTableModule, MatButtonModule, MatCardModule, MatPaginatorModule, MatSortModule,  
+    DragDropModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
