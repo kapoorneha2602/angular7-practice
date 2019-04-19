@@ -8,6 +8,7 @@ import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.componen
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatMenuModule, MatInputModule, MatTableModule, MatButtonModule, MatCardModule, MatTableDataSource, MatPaginatorModule, MatSortModule } from '@angular/material'; 
+import { ScrollingModule } from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { MatToolbarModule, MatMenuModule, MatInputModule, MatTableModule, MatBut
     AppRoutingModule,
     MatToolbarModule, MatMenuModule, MatInputModule, MatTableModule, MatButtonModule, MatCardModule, MatPaginatorModule, MatSortModule,  
     DragDropModule,
+    ScrollingModule,
     BrowserAnimationsModule
   ],
   providers: [],
