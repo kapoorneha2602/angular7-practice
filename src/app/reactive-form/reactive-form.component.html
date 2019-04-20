@@ -1,0 +1,18 @@
+<p>
+  Reactive Form
+</p>
+<!-- <p>
+  Form Status: {{ profileForm.status }}
+</p> -->
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName" required>
+  </label>
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName">
+  </label>
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
+<!-- <button (click)="updateName()">Update Name</button> -->

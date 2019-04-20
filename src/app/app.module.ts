@@ -10,12 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatMenuModule, MatInputModule, MatTableModule, MatButtonModule, MatCardModule, MatTableDataSource, MatPaginatorModule, MatSortModule } from '@angular/material'; 
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { ShapesComponent } from './shapes/shapes.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     DragDropComponent,
     VirtualScrollComponent,
-    ShapesComponent
+    ShapesComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,7 @@ import { ShapesComponent } from './shapes/shapes.component';
     MatToolbarModule, MatMenuModule, MatInputModule, MatTableModule, MatButtonModule, MatCardModule, MatPaginatorModule, MatSortModule,  
     DragDropModule,
     ScrollingModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule
   ],
   providers: [],
