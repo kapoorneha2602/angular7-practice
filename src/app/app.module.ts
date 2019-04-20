@@ -9,11 +9,13 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatMenuModule, MatInputModule, MatTableModule, MatButtonModule, MatCardModule, MatTableDataSource, MatPaginatorModule, MatSortModule } from '@angular/material'; 
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { ShapesComponent } from './shapes/shapes.component';
 @NgModule({
   declarations: [
     AppComponent,
     DragDropComponent,
-    VirtualScrollComponent
+    VirtualScrollComponent,
+    ShapesComponent
   ],
   imports: [
     BrowserModule,
