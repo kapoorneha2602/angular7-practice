@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./authorization.component.scss']
 })
 export class AuthorizationComponent implements OnInit {
-  public static APP_USERNAME = 'NEHA';
+  public static APP_USERNAME = 'neha';
   public static APP_PASSWORD = '123456';
   constructor() { 
     

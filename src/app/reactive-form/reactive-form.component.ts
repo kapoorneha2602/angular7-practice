@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class ReactiveFormComponent implements OnInit {
 
-  constructor( private fb: FormBuilder,private router: Router ) { }
+  constructor(private fb: FormBuilder, private router: Router) { }
 
   ngOnInit() {
   }
@@ -30,35 +30,34 @@ export class ReactiveFormComponent implements OnInit {
   onSubmit() {
     console.warn(this.profileForm.value);
 
+    var username='';
+    username  = this.profileForm.value.userName.toLowerCase();
 
-
-    if(this.profileForm.value.userName === AuthorizationComponent.APP_USERNAME)
-    {
+    if (username === AuthorizationComponent.APP_USERNAME) {
       console.log('username match');
     }
-    else{
+    else {
       console.log('username not match');
     }
 
-    if(this.profileForm.value.password === AuthorizationComponent.APP_PASSWORD)
-    {
+    if (this.profileForm.value.password === AuthorizationComponent.APP_PASSWORD) {
       console.log('password match');
     }
-    else{
+    else {
       console.log('password not match');
-      
+
     }
 
-    if(this.profileForm.value.userName === AuthorizationComponent.APP_USERNAME && this.profileForm.value.password === AuthorizationComponent.APP_PASSWORD)
-    {
+    if (username === AuthorizationComponent.APP_USERNAME && this.profileForm.value.password === AuthorizationComponent.APP_PASSWORD) {
       console.log('both match');
 
-      
+
       this.router.navigate(['/app-dashboard']);
 
     }
-    else{
+    else {
       console.log('both not match');
+      alert('Login credentials are incorrect!!!')
     }
 
 
