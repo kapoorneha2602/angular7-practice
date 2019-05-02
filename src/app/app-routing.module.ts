@@ -4,6 +4,7 @@ import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.component';
 import { ShapesComponent } from './shapes/shapes.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full'},
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'app-virtual-scroll', component: VirtualScrollComponent },
   { path: 'app-shapes', component: ShapesComponent },
   { path: 'app-reactive-form', component: ReactiveFormComponent },
+  { path: 'app-dashboard', component: DashboardComponent },
 ];
 
 @NgModule({

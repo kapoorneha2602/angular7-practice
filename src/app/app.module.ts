@@ -15,13 +15,17 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { ShapesComponent } from './shapes/shapes.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthorizationComponent } from './authorization/authorization.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
     DragDropComponent,
     VirtualScrollComponent,
     ShapesComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    AuthorizationComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

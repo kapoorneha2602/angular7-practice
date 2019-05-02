@@ -1,17 +1,17 @@
 <p>
-  Reactive Form
+  Login Form
 </p>
 <!-- <p>
   Form Status: {{ profileForm.status }}
 </p> -->
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
   <label>
-    First Name:
-    <input type="text" formControlName="firstName" required>
+    Username:
+    <input type="text" formControlName="userName" required>
   </label>
   <label>
-    Last Name:
-    <input type="text" formControlName="lastName">
+    Password:
+    <input type="password" formControlName="password">
   </label>
   <button type="submit" [disabled]="!profileForm.valid">Submit</button>
 </form>
