@@ -52,7 +52,7 @@ export class ReactiveFormComponent implements OnInit {
       console.log('both match');
 
 
-      this.router.navigate(['/app-dashboard']);
+      this.router.navigate(['/dashboard']);
 
     }
     else {
