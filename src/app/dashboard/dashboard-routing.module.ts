@@ -13,14 +13,6 @@ const routes: Routes = [
       { path: 'app-input-output', component: InputOutputComponent},
       { path: 'app-view-child', component: ViewChildComponent}
    ]
-  },
-  {
-    path: '/app-input-output',
-    component: InputOutputComponent
-  },
-  {
-    path: '/app-view-child',
-    component: ViewChildComponent
   }
 ];
 @NgModule({

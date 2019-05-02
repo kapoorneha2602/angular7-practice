@@ -30,7 +30,7 @@ export class ReactiveFormComponent implements OnInit {
   onSubmit() {
     console.warn(this.profileForm.value);
 
-    var username='';
+    let username = '';
     username  = this.profileForm.value.userName.toLowerCase();
 
     if (username === AuthorizationComponent.APP_USERNAME) {
@@ -57,7 +57,7 @@ export class ReactiveFormComponent implements OnInit {
     }
     else {
       console.log('both not match');
-      alert('Login credentials are incorrect!!!')
+      alert('Login credentials are incorrect!!!');
     }
 
 

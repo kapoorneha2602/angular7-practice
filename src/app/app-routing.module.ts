@@ -13,18 +13,7 @@ const routes: Routes = [
   { path: 'app-drag-drop', component: DragDropComponent },
   { path: 'app-virtual-scroll', component: VirtualScrollComponent },
   { path: 'app-shapes', component: ShapesComponent },
-
- 
-
   { path: 'app-reactive-form', component: ReactiveFormComponent },
-  // {
-  //   path: '/app-input-output',
-  //   component: InputOutputComponent
-  // },
-  // {
-  //   path: '/app-view-child',
-  //   component: ViewChildComponent
-  // },
   {
     path: 'dashboard',
     loadChildren: './dashboard/dashboard.module#DashboardModule'
