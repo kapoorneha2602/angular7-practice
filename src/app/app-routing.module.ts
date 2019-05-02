@@ -6,7 +6,7 @@ import { ShapesComponent } from './shapes/shapes.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 const routes: Routes = [
-  { path: '',redirectTo: '',pathMatch: 'full'},
+  { path: '', redirectTo: '', pathMatch: 'full'},
   { path: 'app-drag-drop', component: DragDropComponent },
   { path: 'app-virtual-scroll', component: VirtualScrollComponent },
   { path: 'app-shapes', component: ShapesComponent },

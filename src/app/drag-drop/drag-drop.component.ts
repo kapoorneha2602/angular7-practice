@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-//import {CdkDragDrop, moveItemInArray, transferArrayItem} from ‘@angular/cdk/drag-drop’;
-import { CdkDragDrop, moveItemInArray,transferArrayItem } from '@angular/cdk/drag-drop';  
+ //import {CdkDragDrop, moveItemInArray, transferArrayItem} from ‘@angular/cdk/drag-drop’;
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';  
 @Component({
   selector: 'app-drag-drop',
   templateUrl: './drag-drop.component.html',
@@ -29,7 +29,6 @@ export class DragDropComponent implements OnInit {
       category: 'Software development'
     }
   ];
-  
   completed = [
     {
       name: 'Android',
