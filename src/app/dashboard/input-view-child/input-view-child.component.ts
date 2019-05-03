@@ -1,3 +1,4 @@
+// This is child component
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({

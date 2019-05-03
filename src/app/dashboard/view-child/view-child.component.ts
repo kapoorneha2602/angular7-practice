@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { InputOutputChildComponent } from '../input-view-child/input-view-child.component';
 
 @Component({
@@ -10,12 +10,13 @@ export class ViewChildComponent implements OnInit {
   // message = 'Hola Mundo!';
   constructor() { }
 
-   // View Child
-   @ViewChild(InputOutputChildComponent) child;
-   msg: any;
- 
-   ngOnInit() {
-     // View Child
-     this.msg = (JSON.parse(JSON.stringify(this.child)).message);
-   }
+  // View Child
+  @ViewChild(InputOutputChildComponent) child;
+  msg: any;
+
+  ngOnInit() {
+    // View Child
+    //  console.log('-----the view child is----',this.child);
+    this.msg = (JSON.parse(JSON.stringify(this.child)).message);
+  }
 }
