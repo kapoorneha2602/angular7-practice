@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InputOutputChildComponent } from './input-output-child.component';
+import { InputOutputChildComponent } from './input-view-child.component';
 
 describe('InputOutputChildComponent', () => {
   let component: InputOutputChildComponent;

@@ -5,7 +5,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { ViewChildComponent } from './view-child/view-child.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { DashboardComponent } from './dashboard.component';
-import { InputOutputChildComponent } from './input-output-child/input-output-child.component';
+import { InputOutputChildComponent } from './input-view-child/input-view-child.component';
 
 @NgModule({
   declarations: [ViewChildComponent, InputOutputComponent,DashboardComponent, InputOutputChildComponent],
