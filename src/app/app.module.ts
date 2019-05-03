@@ -16,6 +16,7 @@ import { ShapesComponent } from './shapes/shapes.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthorizationComponent } from './authorization/authorization.component';
+import { InputOutputChildComponent } from './dashboard-module/input-output-child/input-output-child.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AuthorizationComponent } from './authorization/authorization.component'
     VirtualScrollComponent,
     ShapesComponent,
     ReactiveFormComponent,
-    AuthorizationComponent
+    AuthorizationComponent,
+    InputOutputChildComponent
   ],
   imports: [
     BrowserModule,
