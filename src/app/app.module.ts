@@ -17,7 +17,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthorizationComponent } from './authorization/authorization.component';
 import { InputOutputChildComponent } from './dashboard/input-view-child/input-view-child.component';
-
+import { LifeCycleHooksComponent } from './life-cycle-hooks/life-cycle-hooks.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { InputOutputChildComponent } from './dashboard/input-view-child/input-vi
     ShapesComponent,
     ReactiveFormComponent,
     AuthorizationComponent,
-    InputOutputChildComponent
+    InputOutputChildComponent,
+    LifeCycleHooksComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { InputOutputChildComponent } from './dashboard/input-view-child/input-vi
     DragDropModule,
     ScrollingModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
