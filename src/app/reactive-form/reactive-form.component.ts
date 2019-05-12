@@ -35,15 +35,13 @@ export class ReactiveFormComponent implements OnInit {
 
     if (username === AuthorizationComponent.APP_USERNAME) {
       console.log('username match');
-    }
-    else {
+    }else {
       console.log('username not match');
     }
 
     if (this.profileForm.value.password === AuthorizationComponent.APP_PASSWORD) {
       console.log('password match');
-    }
-    else {
+    }else {
       console.log('password not match');
 
     }
@@ -54,8 +52,7 @@ export class ReactiveFormComponent implements OnInit {
 
       this.router.navigate(['/dashboard']);
 
-    }
-    else {
+    }else {
       console.log('both not match');
       alert('Login credentials are incorrect!!!');
     }

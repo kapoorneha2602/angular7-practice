@@ -10,13 +10,13 @@ import { Component, OnChanges,OnInit, DoCheck,
   templateUrl: './life-cycle-hooks.component.html',
   styleUrls: ['./life-cycle-hooks.component.scss']
 })
-export class LifeCycleHooksComponent implements OnChanges,OnInit,DoCheck,AfterContentInit,AfterContentChecked,AfterViewInit,AfterViewChecked,OnDestroy {
+export class LifeCycleHooksComponent implements OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
   // constructor() { }
 
   // ngOnInit() {
   // }
-  data:number=100;
+  data:number = 100;
     constructor() {
         console.log(`new - data is ${this.data}`);
     }
@@ -27,28 +27,28 @@ export class LifeCycleHooksComponent implements OnChanges,OnInit,DoCheck,AfterCo
         console.log(`ngOnInit  - data is ${this.data}`);
     }
     ngDoCheck() {
-        console.log("ngDoCheck")
+        console.log('ngDoCheck');
     }
     ngAfterContentInit() {
-        console.log("ngAfterContentInit");
+        console.log('ngAfterContentInit');
     }
     ngAfterContentChecked() {
-        console.log("ngAfterContentChecked");
+        console.log('ngAfterContentChecked');
     }
     ngAfterViewInit() {
-        console.log("ngAfterViewInit");
+        console.log('ngAfterViewInit');
     }
     ngAfterViewChecked() {
-        console.log("ngAfterViewChecked");
-        console.log("------------------");
+        console.log('ngAfterViewChecked');
+        console.log('------------------');
     }
     ngOnDestroy() {
-        console.log("ngOnDestroy");
+        console.log('ngOnDestroy');
     }
-    fnAddNumber():void{
-        this.data+=100;
+    fnAddNumber() : void{
+        this.data += 100;
     }
-    deleteNumber():void{
-        this.data -=10;
+    deleteNumber() : void{
+        this.data -= 10;
     }
 }

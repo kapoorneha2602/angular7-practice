@@ -1,4 +1,4 @@
-import { Component, OnInit,HostBinding } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import {
   trigger,
   state,
@@ -7,7 +7,6 @@ import {
   transition,
   // ...
 } from '@angular/animations';
-import { log } from 'util';
 @Component({
   selector: 'app-shapes',
   templateUrl: './shapes.component.html',
@@ -42,7 +41,6 @@ export class ShapesComponent implements OnInit {
   }
 
   isOpen = true;
- 
   toggle() {
     this.isOpen = !this.isOpen;
   }
